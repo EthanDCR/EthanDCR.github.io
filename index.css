@@ -73,6 +73,7 @@ body {
 }
 
 .row {
+    padding-top:100px;
     max-width: var(--container-max-width);
     margin: 0 auto;
 }
@@ -227,6 +228,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .btn {
+    border-radius:15px;
     position: relative;
     display: inline-block;
     padding: 1rem 4.2rem;
@@ -272,6 +274,17 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink:focus {
     background: transparent;
 }
+
+
+#white-text {
+  color: white;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 1); /* White glow effect */
+}
+
+
+
+
+
 
 .link__text {
     position: relative;
@@ -471,6 +484,7 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+
 .work__links {
     display: flex;
     align-items: center;
@@ -496,6 +510,33 @@ body:not(.user-is-tabbing) a:focus {
 .work__code:hover {
     transform: scale(1.2);
 }
+
+.work__image {
+    border-radius:50px;
+    position: relative;
+    
+}
+
+.work__image::after {
+
+    height: 100%;
+    width:100%;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .work__image-box {
     margin-bottom: var(--gutter-normal);
@@ -556,6 +597,12 @@ body:not(.user-is-tabbing) a:focus {
         align-items: initial;
     }
 }
+
+
+.about__photo {
+    border-radius:50px;
+}
+
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
