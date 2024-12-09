@@ -680,3 +680,48 @@ body:not(.user-is-tabbing) a:focus {
         padding: var(--gutter-medium) 0;
     } 
 }
+
+
+/* Container for the background animation */
+.work__image-box {
+  position: relative;
+  overflow: visible; 
+  border-radius: 30px;
+  padding: 10px 10px;
+}
+
+/* Background animation */
+.background-animation {
+  position: absolute;
+  top: -5px; 
+  left: -5px; 
+  width: calc(100% + 10px); 
+  height: calc(100% + 10px); 
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 700% 700%; 
+  animation: backgroundMove 3s ease infinite; /* Faster animation */
+  z-index: -1; 
+  border-radius: 30px; 
+}
+
+/* Animation keyframes for the background */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Ensure the image stays on top */
+.work__image {
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+
